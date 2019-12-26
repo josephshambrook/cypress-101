@@ -1,0 +1,71 @@
+:root {
+  --dark-0: #000;
+  --dark-1: #111;
+  --dark-2: #737373;
+  --red-1: #b83f45;
+  --light-0: #fff;
+  --light-1: #f5f5f5;
+  --light-2: #f6f6f6;
+  --light-3: #e6e6e6;
+}
+
+body.dark {
+  /* background: #f5f5f5; */
+  /* color: #111; */
+
+  background: #0A0A0A;
+  color: #eee;
+}
+
+body.dark .todoapp {
+  /* background: #fff; */
+
+  background-color: #222;
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2),
+	            0 25px 50px 0 rgba(255, 255, 255, 0.1);
+}
+
+body.dark .todoapp h1 {
+  /* color: #b83f45; */
+
+  color: #47C0BA;
+}
+
+body.dark .new-todo {
+  color: #e6e6e6;
+}
+
+body.dark .new-todo::placeholder {
+  color: #737373;
+}
+
+body.dark .todo-list li .toggle + label {
+  /* color: #4d4d4d; */
+
+  color: #B2B2B2;
+}
+
+body.dark .todo-list li .destroy {
+  /* color: #cc9a9a; */
+  color: #336565;
+}
+
+body.dark .todo-list li .destroy:hover {
+  /* color: #af5b5e; */
+  color: #50A4A1;
+  cursor: pointer;
+}
+
+body.dark .footer:before {
+  box-shadow:
+    0 1px 1px rgba(255, 255, 255, 0.2),
+    0 8px 0 -3px rgb(30, 30, 30),
+    0 9px 1px -3px rgba(255, 255, 255, 0.2),
+    0 16px 0 -6px rgb(30, 30, 30),
+    0 17px 2px -6px rgba(255, 255, 255, 0.2);
+}
+
+body.dark .info {
+  color: rgb(200, 200, 200);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}

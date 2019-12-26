@@ -1,10 +1,40 @@
 {
-  "private": true,
+  "name": "cypress-101",
+  "description": "> JavaScript® (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, most known as the scripting language for Web pages, but used in many non-browser environments as well such as node.js or Apache CouchDB.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "private": false,
   "dependencies": {
     "todomvc-common": "^1.0.1",
     "todomvc-app-css": "^2.0.1"
   },
   "devDependencies": {
-    "jasmine-core": "^2.0.0"
-  }
+    "@testing-library/cypress": "^5.0.2",
+    "concurrently": "^5.0.2",
+    "cypress": "^3.8.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-cypress": "^2.8.1",
+    "http-server": "^0.12.0"
+  },
+  "scripts": {
+    "start": "http-server .",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test": "concurrently \"npm run start -- -s\" \"npm run cy:open\"",
+    "lint:specs": "eslint cypress/**/*.spec.js",
+    "lint:specs:fix": "eslint cypress/**/*.spec.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephshambrook/cypress-101.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josephshambrook/cypress-101/issues"
+  },
+  "homepage": "https://github.com/josephshambrook/cypress-101#readme"
 }

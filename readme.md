@@ -1,5 +1,13 @@
-# Vanilla JavaScript TodoMVC Example
+# Cypress Workshop
 
-> JavaScript® (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, most known as the scripting language for Web pages, but used in many non-browser environments as well such as node.js or Apache CouchDB.
+This is the source code for my Cypress Workshop, which aims to go through some light basics, and then more hidden features, of using Cypress to test a real web app.
 
-> _[JavaScript - developer.mozilla.org](http://developer.mozilla.org/en-US/docs/JavaScript)
+This workshop uses an example project from [TodoMVC](http://todomvc.com/) to serve as the web app to test.
+
+The workshop goes through the following Cypress concepts:
+
+- Assertions
+- Browser events (clicks etc)
+- Commands
+- Fixtures
+- Plugins (cypress-axe)
